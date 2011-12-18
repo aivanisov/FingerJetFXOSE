@@ -294,7 +294,7 @@ namespace CxxTest {
         }
       }
       OutputStream & operator << (const char *s) { 
-        _printf(s);
+        _printf("%s", s);
         wraparound(s);
         return *this; 
       }
@@ -302,7 +302,7 @@ namespace CxxTest {
       OutputStream & operator << (size_t i) {
         char s[1 + 3 * sizeof(i)];
         numberToString( i, s );
-        _printf(s);
+        _printf("%s", s);
         return *this;
       }
     };

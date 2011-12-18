@@ -49,4 +49,4 @@ runner.cpp
 [Tt]estFeature.txt
 IntDir
 
-*.kdev4
+#*.kdev4
